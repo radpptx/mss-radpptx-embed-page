@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/mss-radpptx-embed-page",
+	"version": "0.1.0",
+	"title": "MSS RadPPTX Embed",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Block for embedding pages made with RadPPTX.",
+	"example": {},
+	"attributes": {
+		"contentId": {
+			"type": "number"
+		},
+		"additionalPadding": {
+			"type": "number",
+			"default": 4
+		}
+	},
+	"supports": {
+		"align": [ "wide", "full" ],
+		"html": false,
+		"dimensions": {
+			"minHeight": true
+		}
+	},
+	"textdomain": "mss-radpptx-embed-page",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"render": "file:./render.php"
+}
