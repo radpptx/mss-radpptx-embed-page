@@ -8,7 +8,7 @@ return array(
 		'version' => '0.1.0',
 		'title' => 'MSS RadPPTX Embed',
 		'category' => 'widgets',
-		'icon' => 'smiley',
+		'icon' => 'embed-generic',
 		'description' => 'Block for embedding pages made with RadPPTX.',
 		'example' => array(
 			

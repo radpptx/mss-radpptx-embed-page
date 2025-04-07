@@ -29,42 +29,42 @@ import './editor.scss';
  *
  * @return {Element} Element to render.
  */
-export default function Edit( { attributes, setAttributes, clientId}) {
+export default function Edit({ attributes, setAttributes, clientId }) {
 	const { contentId, additionalPadding } = attributes;
 	console.log(attributes);
 
 	return (
 		<>
-		<InspectorControls>
-				<PanelBody title={ __( 'Settings' ) }>
+			<InspectorControls>
+				<PanelBody title={__('Settings')}>
 
 					<TextControl
 						type="number"
-                        label={ __('Content ID') }
+						label={__('Content ID')}
 						help="The content ID you want to embed. This is a number that can be found under your RadPPTX account My Teaching section."
-                        value={ contentId || '' }
-                        onChange={ ( value ) => 
-							setAttributes( { contentId: Number(value) || 0 } )
-                        }
-                    />
+						value={contentId || ''}
+						onChange={(value) =>
+							setAttributes({ contentId: Number(value) || 0 })
+						}
+					/>
 					<TextControl
 						type="number"
-                        label={ __('Additional Padding') }
+						label={__('Additional Padding')}
 						help="Additional padding to add to the calculated height for the embedded page. Modify this only if you are seeing scrollbars when you embed your desired page."
-                        value={ additionalPadding || '' }
-                        onChange={ ( value ) => 
-							setAttributes( { additionalPadding: Number(value) || 0 } )
-                        }
-                    />
+						value={additionalPadding || ''}
+						onChange={(value) =>
+							setAttributes({ additionalPadding: Number(value) || 0 })
+						}
+					/>
 				</PanelBody>
 
 			</InspectorControls>
-		<div { ...useBlockProps() }>
-			{ __(
-				'This is where the embedded page will go.',
-				'mss-radpptx-embed-page'
-			) }
-		</div>
+			<div {...useBlockProps()}>
+				{__(
+					'This is where the embedded page will go.',
+					'mss-radpptx-embed-page'
+				)}
+			</div>
 		</>
 	);
 }
