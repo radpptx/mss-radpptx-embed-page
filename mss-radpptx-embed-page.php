@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Mss Radpptx Embed Page
- * Description:       Example block scaffolded with Create Block tool.
+ * Description:       Simple plugin, made with Create Block tool, that provides a Block allowing the embedding of RadPPTX Pages on a 3rd party wordpress website.
  * Version:           0.1.0
  * Requires at least: 6.7
  * Requires PHP:      7.4
