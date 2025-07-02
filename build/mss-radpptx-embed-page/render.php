@@ -14,5 +14,5 @@ if (!defined('DEBUG_RADPPTX_URL')) {
 
 ?>
 <div <?php echo get_block_wrapper_attributes(); ?>>
-	<iframe src="<?php echo $url; ?>" data-additional-padding="<?php echo $additional_padding; ?>" class="mss-radpptx-embed-page-iframe"></iframe>
+	<iframe src="<?php echo esc_url($url); ?>" data-additional-padding="<?php echo esc_attr($additional_padding); ?>" class="mss-radpptx-embed-page-iframe"></iframe>
 </div>
